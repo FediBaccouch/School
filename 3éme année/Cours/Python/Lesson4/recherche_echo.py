@@ -9,7 +9,7 @@ def saisir():
     return n
 
 def remplir(T, n):
-    T[0] = int(input("donner un nombre"))
+    T[0] = int(input("donner un nombre: "))
     for i in range(1, n):
         T[i] = int(input("donner un nombre: "))
         while T[i] <= T[i - 1]:
