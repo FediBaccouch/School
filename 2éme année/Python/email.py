@@ -6,8 +6,8 @@ else:
     p1 = email.find("@")
     p2 = email.find(".")
     nom = email[0:p1]
-    serveur = email[p1+1:p2]
-    extension = email[p2+1:]
+    serveur = email[p1 + 1:p2]
+    extension = email[p2 + 1:]
     if p2 < p1:
         x = 0
     elif len(email) < 15 or len(email) > 25:

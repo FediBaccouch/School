@@ -1,4 +1,4 @@
-n = int(input("donner n:"))
+n = int(input("donner n: "))
 
 c = n // 100
 x = n % 100

@@ -1,6 +1,6 @@
 a = float(input("a= "))
 b = float(input("b= "))
-op = str(input("operateur? "))
+op = str(input("operateur?: "))
 
 if op == "+":
     print(a + b)

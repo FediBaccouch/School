@@ -1,5 +1,5 @@
-lo = int(input("longeur="))
-lar = int(input("largeur="))
+lo = int(input("longeur= "))
+lar = int(input("largeur= "))
 
 s = lo * lar
 
