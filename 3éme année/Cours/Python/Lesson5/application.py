@@ -15,7 +15,7 @@ def remplir(Tab, n):
     for i in range(n):
         Tab[i] = str(input("donner une chaine: "))
         while len(Tab[i]) < 3:
-            Tab[i] = str(input("donner une chaine: "))
+            Tab[i] = str(input("donner une chaine de longueur ≥ 3 : "))
 
 def affichage(TabE, n):
     print("")  # pour que l'affichage fasse un espace entre les données d'utilisateur et les données d'affichage
