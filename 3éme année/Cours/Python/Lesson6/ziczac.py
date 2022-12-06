@@ -57,9 +57,7 @@ def Tri_Croi(ch):
         permut = False
         for i in range(len(ch) - 1):
             if ch[i] > ch[i + 1]:
-                temp = ch[i]
-                ch[i] = ch[i + 1]
-                ch[i + 1] = temp
+                ch = ch[:i] + ch[i + 1] + ch[i] + ch[i + 2:]
                 permut = True
     return ch
 
@@ -69,9 +67,7 @@ def Tri_Dec(ch):
         permut = False
         for i in range(len(ch) - 1):
             if ch[i] < ch[i + 1]:
-                temp = ch[i]
-                ch = ch[:i] + ch[i + 1] + ch[i + 1:]
-                ch = ch[:i + 1] + temp + ch[i + 2:]
+                ch = ch[:i] + ch[i + 1] + ch[i] + ch[i + 2:]
                 permut = True
     return ch
 
