@@ -70,8 +70,8 @@ def Tri_Dec(ch):
         for i in range(len(ch) - 1):
             if ch[i] < ch[i + 1]:
                 temp = ch[i]
-                ch = ch[:i] + ch[i + 1] + ch[i + 2:]
-                ch = ch[:i + 1] + temp + ch[i + 3:]
+                ch = ch[:i] + ch[i + 1] + ch[i + 1:]
+                ch = ch[:i + 1] + temp + ch[i + 2:]
                 permut = True
     return ch
 
