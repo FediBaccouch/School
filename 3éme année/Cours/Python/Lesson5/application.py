@@ -22,7 +22,7 @@ def affichage(TabE, n):
     for i in range(n):
         print(TabE[i]["ch"])
         print(TabE[i]["chy"])
-        print("-----------")  # pour que l'affichage fasse un espace entre les différentes données d'enregistrement
+        print("------------")  # pour que l'affichage fasse un espace entre les différentes données d'enregistrement
 
 def construit(TabE, Tab, n):
     for i in range(n):
