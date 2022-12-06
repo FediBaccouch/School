@@ -9,7 +9,6 @@ def saisir(N, a, b):  # N est juste pour afficher L ou C au lieu de N dans l'inp
     n = int(input("donner " + N + ": "))
     while n < a or n > b:
         n = int(input("donner " + N + ": "))
-   
     return n
 
 def remplir(Mat, L, C):
@@ -38,7 +37,6 @@ def construit(Mat, T, L, C):
                 T[n]["pos"] = {}
                 T[n]["pos"]["NL"] = i
                 T[n]["pos"]["NC"] = j
-    
     return n
 
 def ziczac(m):
@@ -50,8 +48,7 @@ def ziczac(m):
     if ch1 == r1 and ch2 == r2:
         ok = True
     else:
-        ok = False
-    
+        ok = False    
     return ok
 
 def Tri_Croi(ch):
@@ -64,7 +61,6 @@ def Tri_Croi(ch):
                 ch[i] = ch[i + 1]
                 ch[i + 1] = temp
                 permut = True
-    
     return ch
 
 def Tri_Dec(ch):
@@ -77,7 +73,6 @@ def Tri_Dec(ch):
                 ch = ch[:i] + ch[i + 1] + ch[i + 2:]
                 ch = ch[:i + 1] + temp + ch[i + 3:]
                 permut = True
-    
     return ch
 
 L = saisir("L", 3, 5)
