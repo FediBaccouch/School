@@ -32,6 +32,22 @@ function NombreOccurence() {
     }
 }
 
+function ChangerCara() {
+    ch = document.getElementById("texte").value;
+    newC = document.getElementById("newCara").value;
+    oldC = document.getElementById("oldCara").value;
+ 
+    if(newC != "" && oldC != "") {
+        for(i = 0; i < ch.length; i++) {
+            if(ch[i] == oldC) {
+                ch = ch.substr(0, i) + newC + ch.substr(i + 1);
+            }
+        }
+    }
+
+    document.getElementById("texte").value = ch;
+}
+
 function Annuler1() {
     document.getElementById("NbMots").value = "";
     document.getElementById("NbCara").value = "";
@@ -40,6 +56,11 @@ function Annuler1() {
 function Annuler2() {
     document.getElementById("CaraRech").value = "";
     document.getElementById("NbOccu").value = "";
+}
+
+function Annuler3() {
+    document.getElementById("newCara").value = "";
+    document.getElementById("oldCara").value = "";
 }
 
 function Comtage1() {
