@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="formulaire.js"></script>
+    <title>Formulaire   </title>
+</head>
+<body>
+    <form onsubmit="Sent()">
+        <p>Nom & Prenom <input type="text" id="nomPrenom"></p>
+        <p>Mail <input type="text" id="email"></p>
+        <p>Genre:
+            H <input type="radio" name="genre" id="homme">
+            F <input type="radio" name="genre" id="femme">
+        </p>
+        <p>Laisirs:
+            Lecture <input type="checkbox" name="laisir" id="Lec">
+            Sport<input type="checkbox" name="laisir" id="Spo">
+            Voyage<input type="checkbox" name="laisir" id="Voy">
+            Jeux<input type="checkbox" name="laisir" id="Jeu">
+        </p>
+        <input type="submit" value="Envoyer">
+        <button type="reset">Annuler</button>
+    </form>
+</body>
+</html>
