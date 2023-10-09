@@ -1,0 +1,49 @@
+main {
+    width: 71%;
+    height: 77vh;
+}
+
+aside {
+    position: fixed;
+    right: 0;
+    height: 78%;
+}
+
+section {
+    height: 100%;
+}
+
+iframe  {
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer > h3 {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 30px;
+}
+
+.translateIMG {
+    position: relative;
+    left: 50%;
+    top: 50vh;
+    transform: translate(-50%, -50%);
+}
+
+img {
+    translate: -50% -50%;
+    transition: transform 2s ease-in-out 0s;
+}
+
+img:hover {
+    transform: rotate(360deg);
+}
