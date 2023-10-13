@@ -1,16 +1,56 @@
+* {
+    margin: 0;
+}
+
+header, nav, footer {
+    background-color: rgb(118, 183, 244);
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 10%;
+}
+
+nav {
+    position: fixed;
+    top: 10%;
+    left: 0px;
+    width: 100%;
+    height: 10%;
+}
+
+header, nav {
+    padding-left: 10px;
+}
+
 main {
-    width: 71%;
-    height: 77vh;
+    position: fixed;
+    top: 20%;
+    left: 0px;
+    width: 100%;
+    height: 70%;
+    background-color: rgb(146, 198, 244);
 }
 
 aside {
     position: fixed;
     right: 0;
-    height: 78%;
+    height: 70%;
+    width: 30%;
+    background-color: rgb(119, 174, 245);
+}
+
+aside > h3, aside > p {
+    padding: 5px 0 0 10px;
 }
 
 section {
     height: 100%;
+    width: 70%;
+    margin-left: 2px;
 }
 
 iframe  {
@@ -20,30 +60,51 @@ iframe  {
 
 footer {
     position: fixed;
-    bottom: 0;
+    bottom: 0px;
+    left: 0px;
     width: 100%;
+    height: 10%;
 }
 
 footer > h3 {
-    display: inline-block;
+    text-align: center;
     position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 30px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .translateIMG {
-    position: relative;
+    position: absolute;
     left: 50%;
-    top: 50vh;
+    top: 50%;
     transform: translate(-50%, -50%);
 }
 
 img {
-    translate: -50% -50%;
     transition: transform 2s ease-in-out 0s;
 }
 
 img:hover {
     transform: rotate(360deg);
+}
+
+h1, h3 {
+    font-weight: bold;
+    font-size: 24px;
+    color: red;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+a {
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: all 1s 0s;
+}
+
+a:hover {
+    font-size: 30px;
+    color: blueviolet;
 }
