@@ -108,3 +108,75 @@ a:hover {
     font-size: 30px;
     color: blueviolet;
 }
+
+form {
+    background-color: rgb(127, 201, 214);
+    width: 450px;
+    padding: 10px;
+    margin: 50px 0 50px 0;
+    border: 2px rgba(6, 6, 6, 1.00) dotted;
+    border-radius: 20px;
+    box-shadow: 5px 10px 20px black;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+textarea {
+    width: 100%;
+    height: 90px;
+}
+
+fieldset {
+    border-radius: 7px;
+    border: 1px black solid;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+legend {
+    padding: 0 10px 0 10px;
+    color: darkorchid;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+label {
+    color: azure;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+select, input, textarea {
+    background-color: aquamarine;
+    border: 1px black solid;
+    border-radius: 7px;
+    height: 20px;
+    margin-bottom: 10px;
+    padding: 4px;
+}
+
+button {
+    width: 130px;
+    height: 40px;
+    background-color: beige;
+    border: 2px black solid;
+    border-radius: 20px;
+    color: blue;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+}
+
+.button-container {
+    width: fit-content;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+input[type="radio"] {
+    width: 20px;
+    height: 15px;
+}

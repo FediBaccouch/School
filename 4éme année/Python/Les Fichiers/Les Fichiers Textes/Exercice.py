@@ -10,7 +10,7 @@ def afficher(F):
     while ch != "":
         ch = ch[:-1]
         if tauto(ch):
-            print(ch, end="\n")
+            print(ch)
         ch = F.readline()
     F.close()
 

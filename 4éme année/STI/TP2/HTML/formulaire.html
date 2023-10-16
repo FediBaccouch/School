@@ -11,40 +11,53 @@
             <legend>Qui etes-vous?</legend>
             <select name="" id="">
                 <option value="">Enseignants</option>
+                <option value="">Eleve</option>
+                <option value="">Etudiant</option>
             </select>
         </fieldset>
         <h3>Formulaire</h3>
         <fieldset>
             <legend>Information :</legend>
-            <p>Prenom: <input type="text"></p>
-            <p>Nom: <input type="text"></p>
             <div>
-                Genre
+                <label>Prenom:</label>
+                <input type="text">
+            </div>
+            <div>
+                <label for="">Nom: </label>
+                <input type="text">
+            </div>
+            <div>
+                <label for="">Genre:</label>
                 <div>
-                    <input type="radio" name="" id=""> Homme<br>
-                    <input type="radio" name="" id=""> Femme<br>
+                    <input type="radio" name="genre" id=""> Homme<br>
+                    <input type="radio" name="genre" id=""> Femme<br>
                 </div>
             </div>
-            <div>Email:<br>
-                <input type="email" name="" id="">
-            </div>
-            <div>Nº telephone:<br>
-                <input type="number" name="" id="">
+            <div>
+                <label for="">Email:</label><br>
+                <input type="email">
             </div>
             <div>
-                Adresse:<br>
-                <textarea name="" id="" cols="70" rows="7"></textarea>
-            </div>
-            <div>Region:<br>
-                <input type="text" name="" id="">
-            </div>
-            <div>Ville:<br>
-                <input type="text" name="" id="">
-            </div>
-            <div>Code postale:<br>
-                <input type="number" name="" id="">
+                <label for="">Nº telephone:</label><br>
+                <input type="number">
             </div>
             <div>
+                <label for="">Adresse:</label><br>
+                <textarea name="" id=""></textarea>
+            </div>
+            <div>
+                <label for="">Region:</label><br>
+                <input type="text">
+            </div>
+            <div>
+                <label for="">Ville:</label><br>
+                <input type="text">
+            </div>
+            <div>
+                <label for="">Code postale:</label><br>
+                <input type="number">
+            </div>
+            <div class="button-container">
                 <button type="submit">Valider</button>
                 <button type="reset">Annuler</button>
             </div>
