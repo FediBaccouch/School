@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script src="../JS/controles.js"></script>
+    <link rel="stylesheet" href="../CSS/mesStyles.css">
+    <title>Consulter</title>
+  </head>
+  <body>
+    <form id="form1" name="form1" method="post">
+      <fieldset>
+        <legend>Consultation d'une ligne</legend>
+        <table width="688" border="0">
+          <tr>
+            <td width="132">CIN:</td>
+            <td width="540"><input type="text" name="cin" id="cin" class="cl" /></td>
+          </tr>
+          <tr>
+            <td>N° de la ligne:</td>
+            <td><input type="text" name="num" id="num" class="cl" /></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>
+              <input type="reset" name="reset" id="reset" value="Annuler" />
+              <input
+                type="submit"
+                name="submit"
+                id="submit"
+                value="Consulter"
+                onclick="return Verif1()"
+              />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+  </body>
+</html>

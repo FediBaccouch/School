@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../CSS/mesStyles.css">
+    <script src="../JS/controles.js"></script>
+    <title>Transformer</title>
+  </head>
+  <body>
+    <form id="form1" name="form1" method="post" onSubmit="return verif2()">
+      <fieldset width="40">
+        <legend>Transformation de points</legend>
+        <table border="0">
+          <tr>
+            <td>CIN:</td>
+            <td><input type="text" name="cin" id="cin" class="cl" /></td>
+          </tr>
+          <tr>
+            <td>N° de la ligne:</td>
+            <td><input type="text" name="num" id="num" class="cl" /></td>
+          </tr>
+          <tr>
+            <td>Nombre de points a transformer:</td>
+            <td>
+              <input type="radio" name="radio" id="r1" value="1000" />1000
+              <input type="radio" name="radio" id="r2" value="2000" />2000
+              <input type="radio" name="radio" id="r3" value="3000" />3000
+              <input type="radio" name="radio" id="r4" value="4000" />4000
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <input type="reset" name="reset" id="reset" value="Annuler" />
+              <input
+                type="submit"
+                name="submit"
+                id="submit"
+                value="Transformer"
+                onclick="return Verif2()"
+              />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+  </body>
+</html>
