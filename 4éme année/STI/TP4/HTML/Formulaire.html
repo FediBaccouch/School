@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../CSS/Styles.css">
+    <script src="../JS/controles.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulaire</h1>
+    <form name="form" action="">
+        <fieldset>
+            <legend>Vos coordonnees:</legend>
+            <div>
+                <label for="">Civilite:</label>
+                <input type="radio" name="civilite" id="M"> M.
+                <input type="radio" name="civilite" id="Mmme"> Mmme
+                <input type="radio" name="civilite" id="Melle"> Melle
+            </div>
+            <div>
+                <label for="">Nom:</label>
+                <input type="text" name="nom" id="nom">
+            </div>
+            <div>
+                <label for="">Gouvernorat:</label>
+                <select name="gouver" id="gouver">
+                    <option value="Tunis">Tunis</option>
+                    <option value="Sfax">Sfax</option>
+                    <option value="Gabes">Gabes</option>
+                </select>
+            </div>
+            <div>
+                <label for="">Centre d'interet:</label>
+                <input type="checkbox" name="interet" id="sport"> Sport
+                <input type="checkbox" name="interet" id="cinema"> Cinema
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Message:</legend>
+            <textarea name="message" id="message" cols="70" rows="6"></textarea>
+        </fieldset>
+        <div>
+            <button type="submit" onclick="return Verif1()">Envoyer</button>
+            <button type="reset">Annuler</button>
+        </div>
+    </form>
+</body>
+</html>
