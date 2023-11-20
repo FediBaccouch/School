@@ -22,7 +22,7 @@ function Verif1() {
   } else if (nom.length < 3 || nom.length > 20 || !test(nom.toUpperCase(), "A", "Z") || !test(nom[0], "A", "Z")) {
     alert("nom doit etre compose uniquement par des lettres alphabetiques entre 3 et 20 et commence par un lettre Majuscule!");
     return false;
-  } else if (gouver != "Tunis" && gouver != "Sfax" && gouver != "Gabes") {
+  } else if (gouver == "default") {
     alert("Selectionner votre gouvernorat!");
     return false;
   } else if (!interet[0].checked && !interet[1].checked) {
