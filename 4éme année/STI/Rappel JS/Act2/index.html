@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./Activite2.js"></script>
+  <title>Parfaits</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      width: 100vw;
+      height: 100vh;
+      background-color: rgb(66, 156, 234);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    form {
+      width: fit-content;
+      padding: 30px;
+      background-color: rgb(17, 116, 203);
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    div {
+      margin-top: 10px;
+    }
+
+    input {
+      width: 95%;
+      height: 30px;
+      margin-top: 5px;
+      border: none;
+      outline: none;
+      background-color: rgb(69, 159, 238);
+      border-radius: 5px;
+      font-size: 18px;
+      padding: 0 10px 0 10px;
+    }
+
+    label {
+      font-size: 20px;
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    button {
+      width: 130px;
+      height: 40px;
+      align-self: center;
+      background-color: rgb(121, 187, 245);
+      border: none;
+      border-radius: 10px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color .5s ease;
+    }
+
+    button:hover {
+      background-color: rgb(64, 163, 249);
+    }
+  </style>
+</head>
+<body>
+  <form action="">
+    <button onclick="parfaits()">Executer</button>
+  </form>
+</body>
+</html>

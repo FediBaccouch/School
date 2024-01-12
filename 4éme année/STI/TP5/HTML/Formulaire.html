@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/Styles.css" />
+    <script src="../JS/controles.js"></script>
+    <title>Formuaire</title>
+  </head>
+  <body>
+    <form name="form">
+      <h1>FORMULAIRE D'INSCRIPTION</h1>
+      <fieldset>
+        <legend>Vos Coordonnees</legend>
+        <div>
+          <label for="nom">Nom</label>
+          <input type="text" name="nom" id="nom" />
+        </div>
+        <div>
+          <label for="prenom">Prenom</label>
+          <input type="text" name="pre" id="pre" />
+        </div>
+        <div>
+          <label for="nais">Date de naissance</label>
+          <input type="date" name="nais" id="nais" />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <div>
+          <label for="tel">Votre telephone</label>
+          <input type="text" name="tel" id="tel" />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Informations professionnelles</legend>
+        <div>
+          <label for="dip">Quel est votre diplome</label>
+          <select name="dip" id="dip">
+            <option value="license">License</option>
+          </select>
+        </div>
+        <div>
+          <label for="">Quel languages maitrisez-vous?</label>
+          <input type="checkbox" name="q2" id="html" /> HTML5
+          <input type="checkbox" name="q2" id="js" /> Javascript
+          <input type="checkbox" name="q2" id="css" /> CSS3
+        </div>
+        <div>
+          <label for=""
+            >Avez-vous eu deja travaille en tant que developeur?</label
+          >
+          <input type="radio" name="q3" id="oui" /> Oui
+          <input type="radio" name="q3" id="non" /> Non
+        </div>
+      </fieldset>
+      <div>
+        <button type="submit" onclick="return Verif()">
+          Validation de donnees
+        </button>
+        <button type="reset">Annuler la demande</button>
+      </div>
+    </form>
+  </body>
+</html>
